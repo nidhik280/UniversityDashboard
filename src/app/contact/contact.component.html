@@ -4,13 +4,9 @@
     <span>Contact Us</span>
     
   </mat-toolbar>
-  <div class="text">
-  <span>Email: info@GlobalUniversity.com</span><br>
-    <span>Call Us at : +91 7894561230</span>
-  </div>
   
   <div class="contact-form">
-    <span>Have a Question ? Ask Here </span>
+    
     <form (ngSubmit)="send()" #contactForm="ngForm" [formGroup]="formGroup">
       <mat-form-field appearance="fill">
         <mat-label>Name</mat-label>
