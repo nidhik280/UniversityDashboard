@@ -1,0 +1,19 @@
+<div class="teachers-container">
+    <mat-toolbar color="primary">
+      <span>Our Teachers</span>
+    </mat-toolbar>
+  
+    <div class="teachers-list">
+      <mat-card *ngFor="let teacher of teachers" class="teacher-card">
+        <mat-card-header>
+            <mat-icon style="font-size: 38px; height: 40px; width: 35px; margin-bottom: 27px;" aria-hidden="false" aria-label="person icon" class="nav-icon">person</mat-icon>
+          <mat-card-title>{{ teacher.name }}</mat-card-title>
+          <mat-card-subtitle>{{ teacher.subject }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ teacher.profile }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  

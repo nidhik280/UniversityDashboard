@@ -1,0 +1,89 @@
+<div class="courses-container">
+  <h2>Courses Offered</h2>
+  
+  <mat-tab-group>
+    <mat-tab label="Computer Science">
+      <ng-template matTabContent>
+        <div class="course-list">
+          <mat-list>
+            <mat-list-item *ngFor="let course of computerScienceCourses" style="height:100px;">
+              <mat-icon mat-list-icon class="small-icon">book</mat-icon>
+              <h3 mat-line>{{ course.title }}</h3>               
+              <mat-divider mat-list-item></mat-divider>
+            </mat-list-item>
+          </mat-list>
+        </div>
+      </ng-template>
+    </mat-tab>
+
+    <mat-tab label="Engineering">
+      <ng-template matTabContent>
+        <div class="course-list">
+          <mat-list>
+            <mat-list-item *ngFor="let course of engineeringCourses" style="height:80px;">
+              <mat-icon mat-list-icon class="small-icon">book</mat-icon>
+              <h3 mat-line>{{ course.title }}</h3>
+              <mat-divider mat-list-item></mat-divider>
+            </mat-list-item>
+          </mat-list>
+        </div>
+      </ng-template>
+    </mat-tab>
+
+    <mat-tab label="IT">
+      <ng-template matTabContent>
+        <div class="course-list">
+          <mat-list>
+            <mat-list-item *ngFor="let course of ITCourses" style="height:100px;">
+              <mat-icon mat-list-icon class="small-icon">book</mat-icon>
+              <h3 mat-line>{{ course.title }}</h3>
+              <mat-divider mat-list-item></mat-divider>
+            </mat-list-item>
+          </mat-list>
+        </div>
+      </ng-template>
+    </mat-tab>
+
+    <mat-tab label="Commerce">
+      <ng-template matTabContent>
+        <div class="course-list">
+          <mat-list>
+            <mat-list-item *ngFor="let course of Commerce" style="height:80px;">
+              <mat-icon mat-list-icon class="small-icon">book</mat-icon>
+              <h3 mat-line>{{ course.title }}</h3>
+              <mat-divider mat-list-item></mat-divider>
+            </mat-list-item>
+          </mat-list>
+        </div>
+      </ng-template>
+    </mat-tab>
+
+    <mat-tab label="Mathematics">
+      <ng-template matTabContent>
+        <div class="course-list">
+          <mat-list>
+            <mat-list-item *ngFor="let course of Mathematics" style="height:100px;">
+              <mat-icon mat-list-icon class="small-icon">book</mat-icon>
+              <h3 mat-line>{{ course.title }}</h3>
+              <mat-divider mat-list-item></mat-divider>
+            </mat-list-item>
+          </mat-list>
+        </div>
+      </ng-template>
+    </mat-tab>
+
+    <mat-tab label="English">
+      <ng-template matTabContent>
+        <div class="course-list">
+          <mat-list>
+            <mat-list-item *ngFor="let course of English" style="height:100px;">
+              <mat-icon mat-list-icon class="small-icon">book</mat-icon>
+              <p mat-line>{{ course.title }}</p>
+              <mat-divider mat-list-item></mat-divider>
+            </mat-list-item>
+          </mat-list>
+        </div>
+      </ng-template>
+    </mat-tab>
+  </mat-tab-group>
+</div>

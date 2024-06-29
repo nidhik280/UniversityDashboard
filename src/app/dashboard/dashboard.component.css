@@ -1,0 +1,45 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+  }
+  
+  mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .spacer {
+    flex: 1;
+  }
+  
+  .main-container {
+    display: flex;
+    flex: 1;
+  }
+  
+  .sidenav-container {
+    height: calc(100vh - 64px); /* Full height minus the toolbar height */
+  }
+  
+  .sidenav {
+    width: 200px;
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color for contrast */
+  }
+  
+  ::ng-deep .mat-nav-list {
+    color: white; /* Ensure the text color is white */
+  }
+  
+  ::ng-deep .mat-nav-list a {
+    color: white; /* Link text color */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  ::ng-deep .mat-nav-list a:hover {
+    background-color: #555; /* Darker background on hover */
+    color: white; /* Ensure text color remains white on hover */
+  }

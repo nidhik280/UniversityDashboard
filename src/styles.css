@@ -1,0 +1,40 @@
+
+html, body {
+    height: 100%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    overflow:hidden;
+  }
+  a.mat-list-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  a.mat-list-item mat-icon {
+    margin-right: 8px; 
+    font-size: 24px; 
+  }
+  
+  a.mat-list-item .nav-text {
+    flex: 1; 
+  }
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-icon {
+    margin-right: 8px;
+  }
+  
+  .nav-text {
+    line-height: 24px; 
+  }
+
+  .mat-icon{
+    margin-top:30px;
+    display:flex;
+  }
+  

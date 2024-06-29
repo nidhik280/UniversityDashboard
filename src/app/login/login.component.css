@@ -1,0 +1,26 @@
+  .login-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 300px; 
+    margin-top: 70px; 
+    overflow: hidden;
+    align-items:center;
+  }
+  
+  mat-card-header {
+    text-align: center;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  .login-button {
+    width: 100%;
+    margin-top: 16px;
+  }
+  
+  

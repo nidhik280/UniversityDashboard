@@ -1,0 +1,29 @@
+.contact-container 
+{
+    padding: 20px;
+}
+  
+  form 
+  {
+    max-width: 600px;
+    margin-top: 20px;
+  }
+  
+  mat-form-field 
+  {
+    width: 100%;
+  }
+.h1
+{
+    font-weight: bold;
+}  
+
+.contact-form
+{
+font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+span{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}

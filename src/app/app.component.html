@@ -1,0 +1,26 @@
+<div class="app-container">
+      <mat-toolbar color="primary">
+        <mat-icon style="font-size: 38px; height: 40px; width: 35px; margin-bottom: 27px; margin-right: 10px;" aria-hidden="false" aria-label="Globe icon" class="nav-icon">public</mat-icon>
+        <span>Global University</span>
+      <span class="spacer"></span>
+      <a mat-button style="margin-right: 20px; color: white;" routerLink="/courses">Courses</a>
+      <a mat-button style="margin-right: 20px; color: white;" routerLink="/teachers">Faculty</a>
+      <a mat-button style="margin-right: 20px; color: white;" routerLink="/contact">Contact Us</a>
+      <mat-icon style="font-size: 38px; height: 40px; width: 35px; margin-bottom: 27px; margin-right: 10px;" aria-hidden="false" aria-label="account_circle icon" class="nav-icon">account_circle</mat-icon>
+      <div *ngIf="username" class="user-info">  
+        <span>Welcome {{ username }}</span>
+        <br>
+        <button style="align-items: center;" class="btnlogout" mat-button (click)="logout()">Logout</button>
+      </div>
+    </mat-toolbar>
+    <div class="main-container">
+      <mat-sidenav-container class="sidenav-container">
+        <mat-sidenav mode="side" opened class="sidenav">
+          <app-sidebar></app-sidebar>
+        </mat-sidenav>
+        <mat-sidenav-content class="sidenav-content">
+          <router-outlet></router-outlet>
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+    </div>
+  </div>

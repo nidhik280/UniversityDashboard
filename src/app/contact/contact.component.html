@@ -1,0 +1,33 @@
+<div class="contact-container">
+  <mat-toolbar color="primary">
+    <mat-icon style="font-size: 38px; height: 40px; width: 35px; margin-bottom: 27px; margin-right: 10px;" aria-hidden="false" aria-label="Contact icon" class="nav-icon">contact_mail</mat-icon>
+    <span>Contact Us</span>
+    
+  </mat-toolbar>
+  <div class="text">
+  <span>Email: info@GlobalUniversity.com</span><br>
+    <span>Call Us at : +91 7894561230</span>
+  </div>
+  
+  <div class="contact-form">
+    <span>Have a Question ? Ask Here </span>
+    <form (ngSubmit)="send()" #contactForm="ngForm" [formGroup]="formGroup">
+      <mat-form-field appearance="fill">
+        <mat-label>Name</mat-label>
+        <input matInput required name="name" ngModel formControlName="fcName">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" required name="email" ngModel formControlName="fcemail">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Message</mat-label>
+        <textarea matInput required name="message" ngModel formControlName="fcMessage"></textarea>
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit">Send</button>
+    </form>
+  </div>
+</div>
